@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IhsanKu CS Report System</title>
+<title>Syria Care CS Report System</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -103,8 +103,7 @@ textarea{resize:vertical;min-height:70px;line-height:1.5}
 
 <header class="app-header">
   <div class="logo">
-    <div class="logo-mark" style="background:var(--navy)">📋</div>
-    <div><div class="logo-text" style="color:var(--navy)">IhsanKu CS</div><div class="logo-sub" style="color:var(--text-muted)">Report System</div></div>
+    <img src="sclogo.png" alt="Syria Care" class="logo-img">
   </div>
   <div style="display:flex;align-items:center;gap:10px">
     <span class="conn-badge conn-loading" id="conn-badge">⏳ Connecting...</span>
@@ -158,12 +157,8 @@ textarea{resize:vertical;min-height:70px;line-height:1.5}
     <table class="ch-table">
       <thead><tr><th>Saluran</th><th>Masuk</th><th>Engaged</th><th>Rate</th></tr></thead>
       <tbody id="d-tbody">
-        <tr data-ch="wa1"><td><div class="ch-label"><div class="ch-dot" style="background:#3b82f6"></div><div><div class="ch-name">CS Official</div><div class="ch-type">+6011-2700 2003</div></div></div></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><span class="rate-badge rn">—</span></td></tr>
-        <tr data-ch="wa2"><td><div class="ch-label"><div class="ch-dot" style="background:#f59e0b"></div><div><div class="ch-name">CS Unofficial</div><div class="ch-type">+6011-1319 0312</div></div></div></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><span class="rate-badge rn">—</span></td></tr>
-        <tr data-ch="wa3"><td><div class="ch-label"><div class="ch-dot" style="background:#22c55e"></div><div><div class="ch-name">CS Fidyah</div><div class="ch-type">+6011-1319 0310</div></div></div></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><span class="rate-badge rn">—</span></td></tr>
-        <tr data-ch="wa4"><td><div class="ch-label"><div class="ch-dot" style="background:#06b6d4"></div><div><div class="ch-name">Ihsan Korban</div><div class="ch-type">+6011-2060 8014</div></div></div></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><span class="rate-badge rn">—</span></td></tr>
-        <tr data-ch="em1"><td><div class="ch-label"><div class="ch-dot" style="background:#a855f7"></div><div><div class="ch-name">salam@ihsanku.org</div><div class="ch-type">Rasmi & Maklum Balas</div></div></div></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><span class="rate-badge rn">—</span></td></tr>
-        <tr data-ch="em2"><td><div class="ch-label"><div class="ch-dot" style="background:#ec4899"></div><div><div class="ch-name">pertubuhanihsanmadani@gmail.com</div><div class="ch-type">Backup</div></div></div></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><span class="rate-badge rn">—</span></td></tr>
+        <tr data-ch="wa1"><td><div class="ch-label"><div class="ch-dot" style="background:#22c55e"></div><div><div class="ch-name">SC-DRM WhatsApp</div><div class="ch-type">+6013-971 5901</div></div></div></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><span class="rate-badge rn">—</span></td></tr>
+        <tr data-ch="em1"><td><div class="ch-label"><div class="ch-dot" style="background:#a855f7"></div><div><div class="ch-name">partnership@syriacare.org.my</div><div class="ch-type">Email Rasmi</div></div></div></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><input class="num-input" type="number" min="0" value="0" oninput="dRecalc()"></td><td><span class="rate-badge rn">—</span></td></tr>
         <tr class="total-row"><td><strong>JUMLAH</strong></td><td id="d-totM">0</td><td id="d-totE">0</td><td><span class="rate-badge rn" id="d-totR">—</span></td></tr>
       </tbody>
     </table>
@@ -415,7 +410,7 @@ textarea{resize:vertical;min-height:70px;line-height:1.5}
   <div class="card">
     <div class="card-header"><div class="card-icon" style="background:#f0fdf4">📋</div><div class="card-title">Fields untuk Collection "cs_daily_reports"</div></div>
     <div class="card-body">
-      <p style="font-size:13px;color:var(--text-secondary);margin-bottom:8px">Dalam PocketBase Admin UI → Collections → New collection (type: Base, nama: <code>cs_daily_reports</code>) → tambah fields berikut:</p>
+      <p style="font-size:13px;color:var(--text-secondary);margin-bottom:8px">Dalam PocketBase Admin UI → Collections → New collection (type: Base, nama: <code>cs_daily_reports</code>) → tambah fields berikut (hanya wa1 & em1 digunakan untuk Syria Care, lain-lain dibiarkan 0):</p>
       <div class="code-block" id="sql-block">report_date   date      required
 staff_name    text      required
 shift         text
@@ -454,12 +449,8 @@ Kalau nak lock down, isi rule dengan syarat auth (cth: @request.auth.id != "").<
 <script>
 // ── CONSTANTS ──
 const CH=[
-  {key:'wa1',name:'CS Official',type:'+6011-2700 2003',color:'#3b82f6'},
-  {key:'wa2',name:'CS Unofficial',type:'+6011-1319 0312',color:'#f59e0b'},
-  {key:'wa3',name:'CS Fidyah',type:'+6011-1319 0310',color:'#22c55e'},
-  {key:'wa4',name:'Ihsan Korban',type:'+6011-2060 8014',color:'#06b6d4'},
-  {key:'em1',name:'salam@ihsanku.org',type:'Rasmi & Maklum Balas',color:'#a855f7'},
-  {key:'em2',name:'pertubuhanihsanmadani@gmail.com',type:'Backup',color:'#ec4899'},
+  {key:'wa1',name:'SC-DRM WhatsApp',type:'+6013-971 5901',color:'#22c55e'},
+  {key:'em1',name:'partnership@syriacare.org.my',type:'Email Rasmi',color:'#a855f7'},
 ];
 
 // ── POCKETBASE CONFIG ──
@@ -630,13 +621,9 @@ async function dSaveOnly(){
     report_date:dateVal,staff_name:name,
     shift:getShiftValue(),
     notes:document.getElementById('d-notes').value.trim()||null,
-    wa1_masuk:rows[0].masuk,wa1_engaged:rows[0].engaged,
-    wa2_masuk:rows[1].masuk,wa2_engaged:rows[1].engaged,
-    wa3_masuk:rows[2].masuk,wa3_engaged:rows[2].engaged,
-    wa4_masuk:rows[3].masuk,wa4_engaged:rows[3].engaged,
-    em1_masuk:rows[4].masuk,em1_engaged:rows[4].engaged,
-    em2_masuk:rows[5].masuk,em2_engaged:rows[5].engaged,
   };
+  ['wa1','wa2','wa3','wa4','em1','em2'].forEach(k=>{rec[k+'_masuk']=0;rec[k+'_engaged']=0;});
+  CH.forEach((ch,i)=>{rec[ch.key+'_masuk']=rows[i].masuk;rec[ch.key+'_engaged']=rows[i].engaged;});
   const btn=document.getElementById('btn-save');
   btn.disabled=true;btn.innerHTML='<span class="spinner"></span> Menyimpan...';
   try{
@@ -814,18 +801,11 @@ async function delRecord(id){
 
 // ── AGG HELPERS ──
 function mapChFromRec(r){
-  return[
-    {masuk:r.wa1_masuk||0,engaged:r.wa1_engaged||0},
-    {masuk:r.wa2_masuk||0,engaged:r.wa2_engaged||0},
-    {masuk:r.wa3_masuk||0,engaged:r.wa3_engaged||0},
-    {masuk:r.wa4_masuk||0,engaged:r.wa4_engaged||0},
-    {masuk:r.em1_masuk||0,engaged:r.em1_engaged||0},
-    {masuk:r.em2_masuk||0,engaged:r.em2_engaged||0},
-  ];
+  return CH.map(ch=>({masuk:r[ch.key+'_masuk']||0,engaged:r[ch.key+'_engaged']||0}));
 }
 function calcAgg(records){
   const ch=CH.map(()=>({masuk:0,engaged:0}));
-  records.forEach(r=>{mapChFromRec(r).forEach((c,i)=>{ch[i].masuk+=c.masuk;ch[i].engaged+=c.engaged;});});
+  records.forEach(r=>{const rc=mapChFromRec(r);CH.forEach((_,i)=>{ch[i].masuk+=rc[i].masuk;ch[i].engaged+=rc[i].engaged;});});
   const tM=ch.reduce((s,c)=>s+c.masuk,0),tE=ch.reduce((s,c)=>s+c.engaged,0);
   return{ch,tM,tE,tR:tM>0?Math.round(tE/tM*100):null};
 }
@@ -911,7 +891,7 @@ function buildWADaily(){
   if(notes) t+='\n📝 *Catatan:*\n'+notes+'\n';
   t+='\n\n┄┄┄┄┄┄┄┄┄┄\n\n';
   t+='📌 *Nota:* Leads yang belum di-engage hari ini perlu di-engage esok sebelum jam 11 pagi.';
-  t+='\n\n_IhsanKu — Customer Service_';
+  t+='\n\n_Syria Care — Customer Service_';
   return t;
 }
 
@@ -934,7 +914,7 @@ async function buildWAWeekly(){
   if(notes) t+='\n📝 *Catatan:*\n'+notes+'\n';
   t+='\n\n┄┄┄┄┄┄┄┄┄┄\n\n';
   t+='📌 *Nota:* Leads yang belum di-engage hari ini perlu di-engage esok sebelum jam 11 pagi.';
-  t+='\n\n_IhsanKu — Customer Service_';
+  t+='\n\n_Syria Care — Customer Service_';
   return t;
 }
 
@@ -960,7 +940,7 @@ async function buildWAMonthly(){
   if(notes) t+='\n📝 *Catatan:*\n'+notes+'\n';
   t+='\n\n┄┄┄┄┄┄┄┄┄┄\n\n';
   t+='📌 *Nota:* Leads yang belum di-engage hari ini perlu di-engage esok sebelum jam 11 pagi.';
-  t+='\n\n_IhsanKu — Customer Service_';
+  t+='\n\n_Syria Care — Customer Service_';
   return t;
 }
 
@@ -1138,7 +1118,7 @@ function disableNotif(){
 }
 
 function testNotif(){
-  fireNotification('🔔 Test Notifikasi IhsanKu CS', 'Ini adalah test — notifikasi berfungsi dengan baik!');
+  fireNotification('🔔 Test Notifikasi Syria Care CS', 'Ini adalah test — notifikasi berfungsi dengan baik!');
   toast('🔔 Test notifikasi dihantar!');
 }
 
